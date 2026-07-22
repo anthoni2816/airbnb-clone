@@ -1,0 +1,206 @@
+.property-link{
+    text-decoration:none;
+}
+
+.property-card{
+
+    width:340px;
+    height:430px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:all .45s ease;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.35);
+
+    background:#111;
+
+}
+
+.property-card:hover{
+
+    transform:
+    translateY(-15px)
+    scale(1.02);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.5);
+
+}
+
+.property-image{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+.property-card:hover .property-image{
+
+    transform:scale(1.12);
+
+}
+
+.property-info{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:22px;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,0),
+
+    rgba(0,0,0,.65),
+
+    rgba(0,0,0,.97)
+
+    );
+
+    backdrop-filter:blur(4px);
+
+}
+
+.property-info h3{
+
+    color:white;
+
+    font-size:29px;
+
+    margin:0;
+
+    margin-bottom:10px;
+
+}
+
+.location{
+
+    color:#e2e8f0;
+
+    font-size:17px;
+
+}
+
+.price{
+
+    margin-top:14px;
+
+    color:#00ff99;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+.book-btn{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#ff385c;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.book-btn:hover{
+
+    background:#e61e4d;
+
+    transform:scale(1.03);
+
+}
+
+.wishlist-btn{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    z-index:100;
+
+    transition:.35s;
+
+}
+
+.wishlist-btn:hover{
+
+    transform:scale(1.15);
+
+    background:#ff385c;
+
+}
+
+.rating-badge{
+
+    position:absolute;
+
+    top:18px;
+    left:18px;
+
+    background:white;
+
+    color:#111;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    font-size:15px;
+
+    z-index:100;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.25);
+
+}

@@ -1,0 +1,78 @@
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 70px;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#ff5a5f;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:45px;
+}
+
+.nav-links a{
+    color:#333;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ff5a5f;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.profile-circle{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    background:#ff5a5f;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
+
+.username{
+
+    font-weight:600;
+
+    color:#333;
+
+}
