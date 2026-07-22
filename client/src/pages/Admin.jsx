@@ -19,8 +19,9 @@ function Admin() {
 
   const loadProperties = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:5000/api/properties"
+      const res = await
+       axios.get(
+        "https://airbnb-clone-yldx.onrender.com/api/properties"
       );
 
       setProperties(res.data);
@@ -37,8 +38,9 @@ function Admin() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(
-        `http://localhost:5000/api/properties/${id}`
+      await
+       axios.delete(
+        `https://airbnb-clone-yldx.onrender.com/api/properties/${id}`
       );
 
       alert("✅ Property Deleted Successfully");

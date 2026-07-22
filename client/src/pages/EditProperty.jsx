@@ -25,8 +25,9 @@ function EditProperty() {
 
   const loadProperty = async () => {
     try {
-      const res = await axios.get(
-        `http://localhost:5000/api/properties/${id}`
+      const res = await 
+      axios.get(
+        `https://airbnb-clone-yldx.onrender.com/api/properties/${id}`
       );
 
       setProperty({
@@ -50,8 +51,9 @@ function EditProperty() {
     e.preventDefault();
 
     try {
-      await axios.put(
-        `http://localhost:5000/api/properties/${id}`,
+      await 
+      axios.put(
+        `https://airbnb-clone-yldx.onrender.com/api/properties/${id}`,
         {
           ...property,
           price: Number(property.price),

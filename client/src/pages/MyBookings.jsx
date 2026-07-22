@@ -15,8 +15,9 @@ function MyBookings() {
 
     try {
 
-      const res = await axios.get(
-        "http://localhost:5000/api/bookings"
+      const res = await 
+      axios.get(
+        "https://airbnb-clone-yldx.onrender.com/api/bookings"
       );
 
       setBookings(res.data);
@@ -39,8 +40,9 @@ function MyBookings() {
 
     try {
 
-      await axios.delete(
-        `http://localhost:5000/api/bookings/${id}`
+      await 
+      axios.delete(
+        `https://airbnb-clone-yldx.onrender.com/api/bookings/${id}`
       );
 
       loadBookings();

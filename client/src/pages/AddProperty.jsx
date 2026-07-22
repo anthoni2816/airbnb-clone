@@ -39,8 +39,9 @@ function AddProperty() {
           .filter((item) => item !== ""),
       };
 
-      await axios.post(
-        "http://localhost:5000/api/properties/add",
+      await 
+      axios.post(
+        "https://airbnb-clone-yldx.onrender.com/api/properties/add",
         newProperty
       );
 

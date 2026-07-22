@@ -18,8 +18,9 @@ function PropertyCard({
 
   const loadWishlist = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:5000/api/wishlist"
+      const res = await 
+      axios.get(
+        "https://airbnb-clone-yldx.onrender.com/api/wishlist"
       );
 
       const found = res.data.find(
@@ -38,8 +39,9 @@ function PropertyCard({
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/wishlist/toggle",
+      const res = await 
+      axios.post(
+        "https://airbnb-clone-yldx.onrender.com/api/wishlist/toggle",
         {
           propertyId: _id,
         }

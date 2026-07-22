@@ -23,9 +23,8 @@ function Home() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:5000/api/properties"
-        );
+        const response = await 
+        axios.get("https://airbnb-clone-yldx.onrender.com/api/properties")
 
         setProperties(response.data);
       } catch (error) {

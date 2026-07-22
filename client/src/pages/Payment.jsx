@@ -45,8 +45,9 @@ function Payment() {
 
       console.log("Booking Data :", bookingData);
 
-      const res = await axios.post(
-        "http://localhost:5000/api/bookings",
+      const res = await 
+      axios.post(
+        "https://airbnb-clone-yldx.onrender.com/api/bookings",
         bookingData
       );
 

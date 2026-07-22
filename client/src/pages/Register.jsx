@@ -14,7 +14,7 @@ function Register() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/register",
+        "https://airbnb-clone-yldx.onrender.com/api/auth/register",
         {
           name,
           email,
@@ -56,7 +56,11 @@ function Register() {
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          style={{ width: "100%", padding: "12px", marginTop: "20px" }}
+          style={{
+            width: "100%",
+            padding: "12px",
+            marginTop: "20px",
+          }}
         />
 
         <input
@@ -64,7 +68,11 @@ function Register() {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          style={{ width: "100%", padding: "12px", marginTop: "20px" }}
+          style={{
+            width: "100%",
+            padding: "12px",
+            marginTop: "20px",
+          }}
         />
 
         <input
@@ -72,7 +80,11 @@ function Register() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{ width: "100%", padding: "12px", marginTop: "20px" }}
+          style={{
+            width: "100%",
+            padding: "12px",
+            marginTop: "20px",
+          }}
         />
 
         <button
@@ -90,7 +102,8 @@ function Register() {
         </button>
 
         <p style={{ marginTop: "20px" }}>
-          Already have an account? <Link to="/">Login</Link>
+          Already have an account?{" "}
+          <Link to="/">Login</Link>
         </p>
       </form>
     </div>

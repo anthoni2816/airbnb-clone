@@ -14,8 +14,9 @@ function Wishlist() {
 
   const fetchWishlist = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:5000/api/wishlist"
+      const res = await 
+      axios.get(
+        "https://airbnb-clone-yldx.onrender.com/api/wishlist"
       );
 
       setWishlist(res.data);
