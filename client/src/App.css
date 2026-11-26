@@ -330,3 +330,12 @@ body{
 }
 
 }
+
+/* Prevent fixed navbar from covering page content */
+body {
+    margin: 0;
+}
+
+#root {
+    padding-top: 80px;
+}
